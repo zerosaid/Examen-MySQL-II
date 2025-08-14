@@ -1,26 +1,65 @@
-# Descripción del Proyecto:
+Examen MySQL-II
+📌 Descripción del Proyecto
 
-El "Examen MySQL-II", es una carpeta contenedora de varios archivos de tipo sql, donde se muestra el desarrollo y creacion de una base de datos en entorno MySQl, el proposito de esta base de datos llamada *Chinook* es almacenar y mostrar informacion de contenido multimedia discografico, algunas de las funcionalidades implementadas son un conjunto de consultas que ayudan al desarrollador a encontrar informacion de manera eficiente, eventos de almacenado y actualizacion de la misma ademas de funciones que muestran informacion especifica de la base de datos
+Examen MySQL-II es un conjunto de archivos SQL que muestran el desarrollo y la creación de una base de datos en entorno MySQL.
+La base de datos, llamada Chinook, está diseñada para almacenar y gestionar información relacionada con contenido multimedia discográfico.
 
-## Requisitos del Sistema:
-    
+Incluye:
 
-## Instalación y Configuración:
+Consultas optimizadas para obtener información de forma eficiente.
 
-Esta base de datos debes ser creada primero usando el comando:
+Funciones que muestran datos específicos.
 
-### CREATE DATABASE `Chinook`;
+Eventos para almacenamiento y actualización automática de registros.
 
-### USE `Chinook`;
+Estructura con llaves foráneas para garantizar la integridad referencial.
 
-Ubicados en el archivo ddl.sql en la carpeta con el mismo nombre.
+🖥️ Requisitos del Sistema
 
-El sigueinte paso a realizar es la creacion de las tablas dispuestas en el archivo ddl.sql usando las llaves
+MySQL Server 8.0 o superior.
 
-Ctrl + Enter 
+Cliente MySQL (Workbench o CLI).
 
-O seleccionando todas las tablas y usando las llaves
+Sistema operativo compatible con MySQL (Windows, Linux o macOS).
 
-Alt + x
+⚙️ Instalación y Configuración
 
-Seguido de esto se ejecutan los comandos de *ALTER TABLE* para asegurar la coneccion de las tablas usando llaves foraneas
+Crear la base de datos:
+
+CREATE DATABASE `Chinook`;
+USE `Chinook`;
+
+
+Crear las tablas:
+
+Abrir el archivo ddl.sql ubicado en la carpeta correspondiente.
+
+Ejecutar el script completo usando:
+
+Ctrl + Enter (Workbench, para ejecutar línea o bloque seleccionado).
+
+Alt + X (para ejecutar todo el script).
+
+Configurar relaciones:
+
+Ejecutar los comandos ALTER TABLE del mismo archivo ddl.sql para establecer las llaves foráneas y asegurar la conexión entre tablas.
+
+📂 Estructura del Proyecto
+Examen-MySQL-II/
+│
+├── ddl.sql             # Definición de tablas y relaciones
+├── consultas.sql       # Consultas SQL de ejemplo
+├── funciones.sql       # Funciones definidas en la BD
+├── triggers.sql        # Triggers implementados
+├── eventos.sql         # Eventos programados
+└── README.md           # Documentación del proyecto
+
+🚀 Uso
+
+Una vez creada y configurada la base de datos, puedes ejecutar los scripts de:
+
+Consultas para obtener reportes.
+
+Funciones para cálculos específicos.
+
+Triggers y eventos para automatizar tareas.
